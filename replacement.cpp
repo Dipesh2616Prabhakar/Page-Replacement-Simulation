@@ -128,7 +128,7 @@ int main()
     {
         cin >> pages[i];
     }
-    // close the file, so that memory leak issues will not come.
+
     ofstream fout("results.txt");
     fout.close();
 
