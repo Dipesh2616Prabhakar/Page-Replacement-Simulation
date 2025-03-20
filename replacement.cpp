@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Code for FIFO Page Replacement
+ 
 
 void saveResults(string algo, int pageFaults)
 {
@@ -60,7 +60,7 @@ void LRU(vector<int> pages, int frames)
             }
             pageFaults++;
         }
-        pageMap[pages[i]] = i; // Update last used index
+        pageMap[pages[i]] = i;  
     }
     cout << "Total Page Faults: " << pageFaults << endl;
     saveResults("LRU", pageFaults);
@@ -112,8 +112,7 @@ void Optimal(vector<int> pages, int frames)
     cout << "Total Page Faults: " << pageFaults << endl;
     saveResults("Optimal", pageFaults);
 }
-
-// The main function of cpp to run the above functions (also called as Driver Code).
+ 
 int main()
 {
     int frames, n;
